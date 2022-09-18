@@ -6,3 +6,4 @@ tikztemp/*
 *.out
 *.toc
 *.synctex*
+tikzstyle.tikzstyles

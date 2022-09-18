@@ -13,13 +13,13 @@
     {
       "name": "cleanstyles",
       "command": "python3",
-      "args": ["envsetup.py", "clean"],
+      "args": ["envsetup.py", "cleanstyle"],
       "env": {}
     },
     {
       "name": "cleanfiles",
       "command": "python3",
-      "args": ["envsetup.py", "delete"],
+      "args": ["envsetup.py", "deletetemp"],
       "env": {}
     },
     {
@@ -57,5 +57,13 @@
   "[latex]": {
     "editor.formatOnSave": false
   },
-  "cSpell.words": []
+  "cSpell.words": [
+    "auxlock",
+    "tikzit",
+    "tikzstyle",
+    "tikzstyles",
+    "tikztemp",
+    "deletetemp",
+    "cleanstyle"
+  ]
 }

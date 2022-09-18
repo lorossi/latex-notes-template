@@ -2,9 +2,9 @@ from pathlib import Path
 from re import M, sub
 from sys import argv
 
-TEMP_FOLDER = "tikztemp"
+TEMP_FOLDERS = ["tikztemp"]
 TEMP_EXTENSIONS = ["aux", "auxlock", "log", "pdf", "out", "toc"]
-TEMP_FILE_NAME = ".placeholder"
+PLACEHOLDER_EXT = ".placeholder"
 ARROW_STYLE = "{Triangle[scale=0.8]}"
 
 
@@ -31,14 +31,16 @@ def clean_styles() -> None:
 
 
 def make_folder() -> None:
-    Path(TEMP_FOLDER).mkdir(parents=True, exist_ok=True)
-    Path(f"{TEMP_FOLDER}/{TEMP_FILE_NAME}").touch()
+    for f in TEMP_FOLDERS:
+        Path(f).mkdir(parents=True, exist_ok=True)
+        Path(f"{f}/{PLACEHOLDER_EXT}").touch()
 
 
 def delete_folder() -> None:
-    for file in Path(TEMP_FOLDER).iterdir():
-        file.unlink()
-    Path(TEMP_FOLDER).rmdir()
+    for folder in TEMP_FOLDERS:
+        for file in Path(folder).iterdir():
+            file.unlink()
+        Path(folder).rmdir()
 
 
 def delete_temp() -> None:
@@ -48,10 +50,10 @@ def delete_temp() -> None:
 
 
 def main(argv: list[str]) -> None:
-    if "delete" in argv:
+    if "deletetemp" in argv:
         delete_temp()
         delete_folder()
-    if "clean" in argv:
+    if "cleanstyle" in argv:
         clean_styles()
 
     make_folder()
