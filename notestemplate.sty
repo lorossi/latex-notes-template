@@ -67,7 +67,6 @@
 % changed bullet for lists
 \newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{\(\bullet\)}}}}}
 \newcommand\striangle[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{\(\blacktriangleright\)}}}}}
-
 \renewcommand{\labelitemi}{\(\sbullet[.9]\)}
 \renewcommand{\labelitemii}{\(\sbullet[.65]\)}
 \renewcommand{\labelitemiii}{\(\striangle[.5]\)}
@@ -93,7 +92,7 @@
 \numberwithin{equation}{section}
 
 % page margins
-\geometry{left = 2 cm, right = 2 cm, bottom = 2.5 cm, top = 2.5 cm}
+\geometry{left=2cm,right=2cm,bottom=2.5cm,top=2.5cm}
 \setlength{\parindent}{0em}
 
 % hyperlinks colours
@@ -138,7 +137,6 @@
   }
 }
 
-
 % lstlisting style definition for pseudocode
 \lstdefinestyle{pseudocode}{
   commentstyle=\color{gray},
@@ -156,27 +154,16 @@
   showtabs=false,
   showlines=false,
   tabsize=2,
-  morekeywords={and,ceil,downto,each,else,end,error,floor,for,if,in,nand,new,NIL,nor,or,repeat,return,swap,then,to,while,xnor,xor,do,until},
+  morekeywords={NIL,and,ceil,do,downto,each,else,end,error,floor,for,if,in,nand,new,nor,or,repeat,return,swap,then,to,until,while,xnor,xor},
   mathescape=true,
   morecomment=[l][commentstyle]{//},
   }
 
 % lstlsting style definition for C
-\lstdefinestyle{customc}{
+\lstdefinestyle{custom}{
   commentstyle=\color{darkgray},
   keywordstyle=\color{black}\bfseries,
   basicstyle=\ttfamily\footnotesize,
-  language=C,
-  showstringspaces=false,
-  tabsize=2,
-}
-
-% lstlsting style definition for Python
-\lstdefinestyle{custompython}{
-  commentstyle=\color{darkgray},
-  keywordstyle=\color{black}\bfseries,
-  basicstyle=\ttfamily\footnotesize,
-  language=Python,
   showstringspaces=false,
   tabsize=2,
 }
