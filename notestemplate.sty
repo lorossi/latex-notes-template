@@ -137,9 +137,16 @@
   }
 }
 
-% lstlisting style definition for pseudocode
-\lstdefinestyle{pseudocode}{
-  commentstyle=\color{gray},
+% lstlisting pseudocode style
+\lstdefinelanguage{pseudocode}{
+  morekeywords={NIL,and,ceil,do,downto,each,else,end,error,floor,for,if,in,nand,new,nor,or,repeat,return,swap,then,to,until,while,xnor,xor},
+  morecomment=[l][commentstyle]{//},
+  morecomment=[s][commentstyle]{/*}{*/},
+}
+
+% lstlsting generic style definition
+\lstdefinestyle{custom}{
+  commentstyle=\color{lightgray},
   keywordstyle=\color{black}\bfseries,
   basicstyle=\ttfamily,
   breakatwhitespace=false,
@@ -154,18 +161,7 @@
   showtabs=false,
   showlines=false,
   tabsize=2,
-  morekeywords={NIL,and,ceil,do,downto,each,else,end,error,floor,for,if,in,nand,new,nor,or,repeat,return,swap,then,to,until,while,xnor,xor},
   mathescape=true,
-  morecomment=[l][commentstyle]{//},
-  }
-
-% lstlsting style definition for C
-\lstdefinestyle{custom}{
-  commentstyle=\color{darkgray},
-  keywordstyle=\color{black}\bfseries,
-  basicstyle=\ttfamily\footnotesize,
-  showstringspaces=false,
-  tabsize=2,
 }
 
 % command for indented quote block
