@@ -59,11 +59,15 @@
   },
   "cSpell.words": [
     "auxlock",
+    "cleanstyle",
+    "deletetemp",
+    "tikz",
     "tikzit",
     "tikzstyle",
     "tikzstyles",
-    "tikztemp",
-    "deletetemp",
-    "cleanstyle"
-  ]
+    "tikztemp"
+  ],
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+  "python.linting.pydocstyleEnabled": false
 }
