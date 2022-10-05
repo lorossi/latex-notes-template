@@ -34,6 +34,7 @@ Included packages:
 - `courier`
 - `anyfontsize`
 - `subcaption`
+- `adjustbox`
 - `datetime2`
 
 ## License
