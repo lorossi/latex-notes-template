@@ -24,6 +24,7 @@
 \RequirePackage{enumitem} % custom enum
 \RequirePackage{graphicx} % images
 \RequirePackage{fontawesome} % dings
+\RequirePackage{bbding} % more dings
 \RequirePackage{titlesec} % for sections customization
 \RequirePackage{amsmath} % for better math typesetting
 \RequirePackage{xspace} % for spacing after commands
@@ -78,9 +79,13 @@
 
 % add commands for checkmark
 \newcommand{\cmark}{\faCheck\xspace} % check
+\newcommand{\cmarkthin}{\ding{51}\xspace} % check
 \newcommand{\xmark}{\faTimes\xspace}  % cross
+\newcommand{\xmarkthin}{\ding{55}\xspace}  % cross
 \newcommand{\colorcmark}{\textcolor{ForestGreen}{\cmark}\xspace} % green check
+\newcommand{\colorcmarkthin}{\textcolor{ForestGreen}{\cmarkthin}\xspace} % green check
 \newcommand{\colorxmark}{\textcolor{BrickRed}{\xmark}\xspace} % red cross
+\newcommand{\colorxmarkthin}{\textcolor{BrickRed}{\xmarkthin}\xspace} % red cross
 
 % cusom macro creation
 \newcommand{\shortfor}[1]{\textit{#1}\xspace}
