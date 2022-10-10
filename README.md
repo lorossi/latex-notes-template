@@ -8,7 +8,6 @@ Included packages:
 - `adjustbox`
 - `amsfonts`
 - `amsmath`
-- `amsmath`
 - `amssymb`
 - `anyfontsize`
 - `babel`
