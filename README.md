@@ -28,6 +28,7 @@ Included packages:
 - `mathtools`
 - `nameref`
 - `subcaption`
+- `tabularray`
 - `tikz`
 - `titlesec`
 - `tocloft`
