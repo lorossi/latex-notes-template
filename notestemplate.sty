@@ -143,6 +143,11 @@
   }
 }
 
+% define custom colours
+\definecolor{codetext}{rgb}{0.05,0.05,0.05}
+\definecolor{codebackground}{rgb}{0.97,0.97,0.97}
+\definecolor{codecomment}{rgb}{0.3,0.3,0.3}
+
 % lstlisting pseudocode style
 \lstdefinelanguage{pseudocode}{
   morekeywords={NIL,and,ceil,do,downto,each,else,end,error,floor,for,if,in,nand,new,nor,or,repeat,return,swap,then,to,until,while,xnor,xor},
@@ -150,15 +155,15 @@
   morecomment=[s][commentstyle]{/*}{*/},
 }
 
-% lstlsting generic style definition
+% lstlsting custom style definition
 \lstdefinestyle{custom}{
-  commentstyle=\color{gray},
-  keywordstyle=\color{black}\bfseries,
-  basicstyle=\ttfamily,
+  commentstyle=\color{codecomment},
+  backgroundcolor=\color{codebackground},
+  keywordstyle=\color{codetext}\bfseries,
+  basicstyle=\color{codetext}\ttfamily,
   breakatwhitespace=false,
   captionpos=b,
   keepspaces=false,
-  numbers=left,
   xleftmargin=10pt,
   belowcaptionskip=20pt,
   numberstyle=\small,
@@ -169,6 +174,9 @@
   tabsize=2,
   mathescape=true,
 }
+
+% lstlisting default style
+\lstset{style=custom}
 
 % command for indented quote block
 \newcommand{\indentquote}[1]{
