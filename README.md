@@ -9,6 +9,7 @@ Included packages:
 - `amsfonts`
 - `amsmath`
 - `amssymb`
+- `amsthm`
 - `anyfontsize`
 - `babel`
 - `bbding`
