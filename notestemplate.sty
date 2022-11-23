@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{notestemplate}[2022-11-10 LaTeX template for my notes]
+\ProvidesPackage{notestemplate}[2022-11-23 LaTeX template for my notes]
 
 % I don't really know how those packages interact or why they do so
 %   but if I change the import order, something always stops working
@@ -22,7 +22,7 @@
 \RequirePackage{enumitem} % custom enum
 \RequirePackage{graphicx} % images
 \RequirePackage{fontawesome} % dings
-\RequirePackage{bbding} % more dings
+\RequirePackage{pifont} % moredings
 \RequirePackage{wasysym} % math symbols
 \RequirePackage{titlesec} % for sections customization
 \RequirePackage{xspace} % for spacing after commands
@@ -80,7 +80,7 @@
 \newcommand{\cmark}{\faCheck\xspace} % check
 \newcommand{\cmarkthin}{\ding{51}\xspace} % check
 \newcommand{\xmark}{\faTimes\xspace}  % cross
-\newcommand{\xmarkthin}{\ding{55}\xspace}  % cross
+\newcommand{\xmarkthin}{\ding{53}\xspace}  % cross
 \newcommand{\colorcmark}{\textcolor{ForestGreen}{\cmark}\xspace} % green check
 \newcommand{\colorcmarkthin}{\textcolor{ForestGreen}{\cmarkthin}\xspace} % green check
 \newcommand{\colorxmark}{\textcolor{BrickRed}{\xmark}\xspace} % red cross
