@@ -83,6 +83,7 @@ This template includes the following LaTeX packages:
 - `pifont`
 - `subcaption`
 - `tabularray`
+- `tcolorbox`
 - `tikz`
 - `titlesec`
 - `tocloft`
