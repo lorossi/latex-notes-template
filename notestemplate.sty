@@ -190,10 +190,8 @@
 }
 
 % define colours for theorems
-\definecolor{theorembg}{rgb}{0.95,0.95,0.95}
-\definecolor{theoremborder}{rgb}{0.8,0.8,0.8}
-\definecolor{definitionbg}{rgb}{0.95,0.95,0.95}
-\definecolor{definitionborder}{rgb}{0.8,0.8,0.8}
+\definecolor{theorembg}{rgb}{0.97,0.97,0.97}
+\definecolor{theoremborder}{rgb}{0.76,0.76,0.76}
 
 % theorem, definitions and properties styling
 \tcbuselibrary{breakable}
@@ -204,16 +202,24 @@
 
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}[section]
+
 \theoremstyle{definition}
 \newtheorem{property}{Property}[section]
+
 \theoremstyle{definition}
 \newtheorem{problem}{Problem}[section]
+
 \theoremstyle{definition}
 \newtheorem{proposition}{Proposition}[section]
+
 \theoremstyle{definition}
 \newtheorem{example}{Example}[section]
+
 \theoremstyle{definition}
-\newtheorem{notes}[theorem]{Notes}
+\newtheorem{notes}{Notes}[section]
+
+\theoremstyle{definition}
+\newtheorem{remarks}{Remarks}[section]
 
 \tcbset{theorem/.style ={
       before skip=4ex,
@@ -231,15 +237,11 @@
 }
 
 \tcbset{definition/.style ={
-      before skip=4ex,
-      after skip=4ex,
-      boxsep=0mm,
-      top=2ex,
-      bottom=2ex,
-      left*=4ex,
-      right*=4ex,
-      colback=definitionbg,
-      colframe=definitionborder,
+      before skip=2ex,
+      after skip=2ex,
+      boxsep=1ex,
+      colback=theorembg,
+      colframe=theoremborder,
       sharp corners,
     }
 }
@@ -255,6 +257,7 @@
 \tcolorboxenvironment{proposition}{definition}{}
 \tcolorboxenvironment{example}{definition}{}
 \tcolorboxenvironment{notes}{definition}{}
+\tcolorboxenvironment{remarks}{definition}{}
 
 % command for inline quote block
 \newcommand{\inlinequote}[1]{
