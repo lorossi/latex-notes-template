@@ -75,6 +75,7 @@ This template includes the following LaTeX packages:
 - `geometry`
 - `graphicx`
 - `hyperref`
+- `hyphsubst`
 - `inputenc`
 - `listings`
 - `lmodern`
