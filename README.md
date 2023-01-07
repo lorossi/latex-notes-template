@@ -65,6 +65,7 @@ This template includes the following LaTeX packages:
 - `amsthm`
 - `anyfontsize`
 - `babel`
+- `calculator`
 - `ccicons`
 - `courier`
 - `csquotes`
@@ -76,6 +77,7 @@ This template includes the following LaTeX packages:
 - `graphicx`
 - `hyperref`
 - `inputenc`
+- `kvoptions`
 - `listings`
 - `lmodern`
 - `mathtools`
